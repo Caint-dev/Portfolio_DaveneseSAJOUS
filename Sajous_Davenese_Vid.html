@@ -12,7 +12,8 @@
       <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
       <!-- end mobile specific info -->
    </head>
-   <body >
+   <body onload="myFunction()" style="margin:0;">
+      <div id="loader"></div>
       <!---------------------------------------------------- Le menu de navigation ---------------------------------------------------->
       <nav class="Menu">
          <a href="#accueil" class="logo">Sajous Davenese</a>
@@ -635,8 +636,17 @@
          $(".ah").inViewport(function(px){
          if(px) $(this).addClass("triggeredCSS3") ;
          });
-
          
+         var myVar;
+
+         function myFunction() {
+         myVar = setTimeout(showPage, 3000);
+         }
+
+         function showPage() {
+         document.getElementById("loader").style.display = "none";
+         document.getElementById("myDiv").style.display = "block";
+         }
       </script>
    </body>
 </html>
