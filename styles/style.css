@@ -254,19 +254,8 @@ nav li:hover .snav {
 		display: none;
 	}
 }
-@media screen and (max-width: 1000px) {
-	.minima {
-		visibility: visible;
-		font-size: 15px;
-	}
-	.maxima {
-		visibility: hidden;
-	}
-	.oui {
-		visibility: hidden;
-  }
-  
-}
+
+
 
 
 /*-------------------------------------------- Fin taille de la page et redimension responsive--------------------------------------------*/
@@ -485,6 +474,19 @@ nav li:hover .snav {
 
 .maxima {
 	visibility: visible;
+}
+@media screen and (max-width: 1000px) {
+	.minima {
+		visibility: visible;
+		font-size: 15px;
+	}
+	.maxima {
+		visibility: hidden;
+	}
+	.oui {
+		visibility: hidden;
+  }
+  
 }
 .moreInfo:hover .info{
 	
