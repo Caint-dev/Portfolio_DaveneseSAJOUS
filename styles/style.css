@@ -1,0 +1,574 @@
+
+
+/*fichier css*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+header {
+	position: relative;
+	background-color: black;
+	height: 100vh;
+	min-height: 500px;
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  header video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+	position: relative;
+	z-index: 2;
+  }
+  
+  header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 1;
+  }
+  
+ 
+body {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+h1 {
+	margin-bottom: 80px;
+	text-align: center;
+	font-size: 50px;
+	line-height: 50px;
+	color: #2c3e50;
+	position: relative;
+}
+
+.space {
+	min-height: 100px;
+}
+
+
+
+#presentation {
+	border: solid;
+	border-width: thin;
+	border-radius: 0px 0px 100px 100px;
+}
+
+
+
+.sec1 {
+	background-color: #26272b;
+	padding: 45px 0 20px;
+	font-size: 15px;
+	line-height: 24px;
+	min-height: 400px;
+	color: #737373;
+}
+
+.lineseparator {
+	border-top: 1px solid rgb(138, 138, 138);
+}
+
+
+/*--------------------------------------------Le menu -------------------------------------------- */
+
+.snav {
+	clip: rect(1px, 1px, 1px, 1px);
+	opacity: 0;
+	transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.2, 0, 0.2, 1);
+	transform: translateY(-10px) scaleY(0.5);
+	transform-origin: top;
+	box-shadow: 5px 5px 5px rgba(black, 0.3);
+	position: absolute;
+}
+
+.snav li {
+	list-style: none;
+	float: left;
+	clear: left;
+	max-width: 157.2px;
+}
+
+nav li:hover .snav {
+	clip: auto;
+	opacity: 1;
+	transform: translateY(0) scaleY(1);
+}
+
+
+/* Le menu*/
+
+.Menu {
+	background-color: #fff;
+	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+.Menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.Menu li a {
+	display: block;
+	padding: 20px 20px;
+	border-right: 1px solid #f4f4f4;
+	text-decoration: none;
+}
+
+.Menu li a:hover,
+.Menu .hum:hover {
+	background-color: #eef8c26b;
+}
+
+.Menu .logo {
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+
+/* menu */
+
+.Menu .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+}
+
+
+/* menu icon humberger */
+
+.Menu .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
+}
+
+.Menu .menu-icon .navicon {
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+
+.Menu .menu-icon .navicon:before,
+.Menu .menu-icon .navicon:after {
+	background: #333;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+
+.Menu .menu-icon .navicon:before {
+	top: 5px;
+}
+
+.Menu .menu-icon .navicon:after {
+	top: -5px;
+}
+
+
+/* menu btn */
+
+.Menu .hum {
+	display: none;
+}
+
+.Menu .hum:checked~.menu {
+	max-height: 240px;
+}
+
+.Menu .hum:checked~.menu-icon .navicon {
+	background: transparent;
+}
+
+.Menu .hum:checked~.menu-icon .navicon:before {
+	transform: rotate(-45deg);
+}
+
+.Menu .hum:checked~.menu-icon .navicon:after {
+	transform: rotate(45deg);
+}
+
+.Menu .hum:checked~.menu-icon:not(.steps) .navicon:before,
+.Menu .hum:checked~.menu-icon:not(.steps) .navicon:after {
+	top: 0;
+}
+
+
+/*--------------------------------------------Fin du  menu -------------------------------------------- */
+
+
+/*-------------------------------------------- taille de la page et redimension responsive--------------------------------------------*/
+
+@media (min-width: 768px) {
+	.Menu li {
+		float: left;
+	}
+	.Menu li a {
+		padding: 20px 30px;
+	}
+	.Menu .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	.Menu .menu-icon {
+		display: none;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.minima {
+		visibility: visible;
+		font-size: 15px;
+	}
+	.maxima {
+		visibility: hidden;
+	}
+	.oui {
+		visibility: hidden;
+  }
+  
+}
+
+
+/*-------------------------------------------- Fin taille de la page et redimension responsive--------------------------------------------*/
+
+
+/*--------------------------------------------Partie animation--------------------------------------------*/
+
+
+.prog1.triggeredCSS3 {
+	background-color: red;
+	height: 25px;
+	display: block;
+	animation: prog1 2s linear forwards;
+}
+
+.prog2.triggeredCSS3 {
+	background-color: red;
+	height: 25px;
+	display: block;
+	animation: prog2 2s linear forwards;
+}
+
+.prog3.triggeredCSS3 {
+	background-color: red;
+	height: 25px;
+	display: block;
+	animation: prog3 2s linear forwards;
+}
+
+.prog4.triggeredCSS3 {
+	background-color: red;
+	height: 25px;
+	display: block;
+	animation: prog4 2s linear forwards;
+}
+
+.prog5.triggeredCSS3 {
+	background-color: red;
+	height: 25px;
+	display: block;
+	animation: prog5 2s linear forwards;
+}
+
+@keyframes prog1 {
+	0% {
+		width: 0%
+	}
+	100% {
+		width: 15%;
+		background-color: purple
+	}
+}
+
+@keyframes prog2 {
+	0% {
+		width: 0%
+	}
+	100% {
+		width: 30%;
+		background-color: orange
+	}
+}
+
+@keyframes prog3 {
+	0% {
+		width: 0%
+	}
+	100% {
+		width: 50%;
+		background-color: blue
+	}
+}
+
+@keyframes prog4 {
+	0% {
+		width: 0%
+	}
+	100% {
+		width: 75%;
+		background-color: yellow
+	}
+}
+
+@keyframes prog5 {
+	0% {
+		width: 0%
+	}
+	100% {
+		width: 100%;
+		background-color: green
+	}
+}
+
+@keyframes eye {
+    from {
+		
+		border-radius:  75% 15%;
+		height: 1px ;
+    
+	}
+	        
+    to{
+		transform: rotate(45deg);
+		border-radius:  75% 15%;
+		height: 45px;
+		
+		
+	}
+  }
+  @keyframes eyep {
+    from {
+		
+		
+		height: 1px ;
+    
+	}
+	        
+    to{
+		
+		height: 15px;
+		top: 15px;
+		
+	}
+  }
+
+
+/*--------------------------------------------Fin Partie animation--------------------------------------------*/
+
+
+/*--------------------------------------------Code spécifique a la oartie expérience loisirs(affichage d'un pop up lors du clic sur image)--------------------------------------------*/
+
+
+
+.hidden:active {
+	opacity: 1;
+}
+
+.masthead {
+	height: 100vh;
+	min-height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hidden {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	transition: opacity 100ms ease-in;
+	pointer-events: none;
+	overflow: auto;
+	overflow-x: hidden;
+	z-index: 2;
+}
+
+.hidden:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+.hidden>div {
+	max-width: 95%;
+	width: 90%;
+	position: relative;
+	margin: 10% auto;
+	padding: 20px;
+	border-radius: 3px;
+	background: #fff;
+	overflow-y: scroll;
+}
+
+.close {
+	list-style-type: none;
+}
+
+.close:hover {
+	color: #fa3f6f;
+}
+
+.maxima {
+	background: white;
+	z-index: 1;
+	position: absolute;
+	left: 39%;
+}
+
+.logo img{
+	
+	max-height: 60px;
+	max-width: 60px;
+}
+.logo:hover {
+	opacity: 0.5;
+}
+.logo {
+
+	color: rgb(191, 143, 0);
+}
+.oui hr {
+	content: '';
+	border-left: 2px solid rgb(191, 143, 0);
+	height: 100%;
+	position: absolute;
+	left: 50%;
+}
+
+.minima {
+	visibility: hidden;
+}
+
+.maxima {
+	visibility: visible;
+}
+.moreInfo:hover .info{
+	
+	transition: opacity 100ms ease-in;
+	opacity: 0.2;
+	
+}
+
+.moreInfo:hover .eye{
+	
+	opacity: 1;
+	animation-name: eye;
+	
+	animation-duration: 1s;
+	animation-fill-mode: both;
+
+	
+}
+.moreInfo:hover .eyep{
+	opacity: 1;	
+	animation: eyep ;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+
+.eye {
+    opacity: 0;
+
+	width: 45px;
+	height: 1px;
+	border: solid 1px rgb(191, 143, 0);
+	
+	position: absolute;
+   
+	top: 40%;
+	left: 45%;    
+	
+  }
+  .eye .eyep{
+	opacity: 0;
+	content: '';
+	display: block;
+	position: absolute;
+	width: 15px;
+	height: 1px;
+	border: solid 2px rgb(191, 143, 0);
+	border-radius: 50%;
+	left: 12px;
+	top: 4px;
+	 
+	
+  }
+  
+
+
+
+/*-------------------------------------------- Fin du code spécifique a la page loisirs(affichage d'un pop up lors du clic sur image)--------------------------------------------*/
+
+
+/*-------------------------------------------- footer--------------------------------------------*/
+
+footer {
+	background-color: #26272b;
+	padding: 45px 0 20px;
+	font-size: 15px;
+	line-height: 24px;
+	color: #737373;
+}
+
+
+
+footer h6 {
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 5px;
+	letter-spacing: 2px;
+	border-top-color: #bbb;
+	opacity: 0.5;
+}
+
+
+
+  
+/*-------------------------------------------- Fin du footer--------------------------------------------*/
+

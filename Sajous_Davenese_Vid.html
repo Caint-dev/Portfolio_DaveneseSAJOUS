@@ -1,0 +1,643 @@
+
+
+<!DOCTYPE HTML>
+<html lang="fr">
+   <head>
+      <title> ePortfolio </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <!-- mobile specific info ... mobile specify windows size to 800/900 whereas device-width is less in general, resulting in small texte etc.- those meta correct this... -->
+      <meta name="HandheldFriendly" content="true" />
+      <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
+      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+      <!-- end mobile specific info -->
+   </head>
+   <body >
+      <!---------------------------------------------------- Le menu de navigation ---------------------------------------------------->
+      <nav class="Menu">
+         <a href="#accueil" class="logo">Sajous Davenese</a>
+         <input class="hum" type="checkbox" id="menu-btn" />
+         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+         <ul class="menu">
+            <li>
+               <a href="#compétences">Compétences</a>
+               <ul class ="snav ">
+                  <li><a  href="#compétences1">Compétences informatiques </a></li>
+                  <li ><a  href="#compétences2">Compétences logiciels</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#exp1">Expériences</a>						
+               <ul class ="snav" >
+                  <li class="nav-item bg-light"><a class="nav-link" href="#exp1">Projets</a></li>
+                  <li class="nav-item bg-light"><a class="nav-link" href="#exp2">Formation et Expériences</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <!---------------------------------------------------- Fin du menu de navigation ---------------------------------------------------->
+      <!---------------------------------------------------- Le header(la vidéo du début) ---------------------------------------------------->
+      <header>
+         <div class="overlay"></div>
+         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+           <source src="vidéos/crack.mp4" type="video/mp4">
+         </video>
+         <div class="container h-100">
+           <div class="d-flex h-100 text-center align-items-center">
+             <div class="w-100 text-white">
+               <h1 class="display-3">Davenese SAJOUS</h1>
+               <p class="lead mb-0">Etudiant en informatique</p>
+             </div>
+           </div>
+         </div>
+       </header>
+      <!---------------------------------------------------- Fin du header ---------------------------------------------------->
+      <!---------------------------------------------------- Le contenu de la page à propos (fait principalement avec bootstrap) ---------------------------------------------------->
+      <br>
+      <br>
+      <section id = "accueil" class="col-lg-12 ">
+         <div class="container">
+            <h1 class=" text-center space"> À propos de moi</h1>
+            <div class = "row">
+               <div id="écrit" class = col-lg-8>
+                  <p> Je suis Davenese Sajous, et je suis étudiant informatique. </p>
+                  <br>
+                  <h2> <b>Mon parcours</b> </h2>
+                  <br>
+                  <b style="color: rgb(191, 143, 0); font-size: 22px;" >J</b>’ai suivi la filière Sciences et Technologies de l'Industrie et du Développement durable
+                  option Système d'Information et Numérique. À la suite de l’obtention de mon bac avec <b>mention Bien</b>, 
+                  j’ai décidé d’entreprendre une formation en informatique, au sein de l’Institut Universitaire de Technologie Paris Descartes.
+                  <br>Ayant réussi ma première année, je me lance dans une <b>formation en alternance</b> pour y découvrir le monde du
+                  travail tout en ayant une formation qualificative au sein de Paris Descartes.
+                  J’aimerais poursuivre, après cette alternance, avec une licence professionnelle Génie logiciel, 
+                  système d’information et ERP, puis enfin un Master.
+                  Pendant mes études, j'ai acquis des compétences en <b>développement web</b> (Html/Css, Javascript),
+                  en <b>programmation</b> (Java, C, C#, Visual Basic...), et en <b>gestion de base de données</b>  (SQL, Access...)
+                  <br>
+                  <br>
+                  <h2> <b>Mon objectif</b></h2>
+                  <b style="color: rgb(191, 143, 0); font-size: 22px;" >J</b>e recherche à mettre mon savoir-faire et savoir-être au service d’une entreprise disposant d’une très bonne relation de travail.
+                  Je suis actuellement sur le point de rentrer en seconde année de <b>Dut informatique en alternance</b>, et actuellement à la recherche d'une entreprise.
+                  
+               </div>
+               <div class = "col-lg-4 card bg-light mb-3">
+                  <img src="images/moi.jpg"  class="card-img-top" alt="Photo de Davenese Sajous">
+                  <div class="lineseparator"></div>
+                  <b>Prénom</b>  Davenese
+                  <div class="lineseparator"></div>
+                  <b>Nom</b>  Sajous
+                  <div class="lineseparator"></div>
+                  <b>Âge</b>  19 ans
+                  <div class="lineseparator"></div>
+                  <b>Nationalité</b> Française
+                  <div class="lineseparator"></div>
+                  <b>Téléphone</b>  +33 6 40 54 15 35
+                  <div class="lineseparator"></div>
+                  <b>Email</b>  sajous.davenese@gmail.com
+                  <div class="lineseparator"></div>
+                  <b>LinkedIn</b><a href="https://www.linkedin.com/in/davenese-sajous-a901751a7/">Voir mon profil</a>  
+                  <div class="lineseparator"></div>
+                  <b>GitHub</b><a href="https://github.com/Caint-dev" >Voir mon profil</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <hr>
+      <div id = "compétences" class="space">
+         <h1 class=" text-center space"> Mes Compétences </h1>
+      </div>
+      <section id="compétences1" class="col-lg-12 sec1">
+         <div class="container">
+            <h1 class="text-white bg-dark"> Compétences informatiques</h1>
+            <br>
+            <br>
+            <div style="overflow-x:auto;">
+               <table class="table table-dark ">
+                  <caption>Mes compétences en informatique</caption>
+                  <thead class="thead-dark">
+                     <!-- En-tête du tableau -->
+                     <tr>
+                        <th>N°</th>
+                        <th>Langage</th>
+                        <th>Pourcentage d’apprentissage</th>
+                        <th class="text-center">Description</th>
+                        <th>Premier lancement</th>
+                        <th>Auteur</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <!-- Corps du tableau -->
+                     <tr>
+                        <td>1</td>
+                        <td>Java</td>
+                        <td>
+                           <div class="prog4 ah"></div>
+                        </td>
+                        <td>Java est un langage de programmation orienté objet,il reprend en grande partie la syntaxe du langage C++ </td>
+                        <td>23 mai 1995</td>
+                        <td>James Gosling et Patrick Naughton</td>
+                     </tr>
+                     <tr>
+                        <td>2</td>
+                        <td>C</td>
+                        <td>
+                           <div class="prog3 ah"></div>
+                        </td>
+                        <td>C est un langage de programmation impératif généraliste, de bas niveau. De nombreux langages plus modernes comme C++, C#, Java et PHP ou Javascript ont repris une syntaxe similaire au C et reprennent en partie sa logique. C offre au développeur une marge de contrôle importante sur la machine (notamment sur la gestion de la mémoire) et est de ce fait utilisé pour réaliser les « fondations » (compilateurs, interpréteurs…) de ces langages plus modernes.  </td>
+                        <td>1972</td>
+                        <td>Dennis Ritchie</td>
+                     </tr>
+                     <tr>
+                        <td>3</td>
+                        <td>Html/Css</td>
+                        <td>
+                           <div class="prog5 ah"></div>
+                        </td>
+                        <td>L’HyperText Markup Language, généralement abrégé HTML ou dans sa dernière version HTML5, est le langage de balisage conçu pour représenter les pages web. C’est un langage permettant d’écrire de l’hypertexte, d’où son nom. CSS, de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML </td>
+                        <td>  1992 et 17 décembre 1996</td>
+                        <td>  World Wide Web Consortium  et CSS Working Group</td>
+                     </tr>
+                     <tr>
+                        <td>4</td>
+                        <td>C#</td>
+                        <td>
+                           <div class="prog4 ah"></div>
+                        </td>
+                        <td>C#  est un langage de programmation orientée objet, commercialisé par Microsoft depuis 2002 et destiné à développer sur la plateforme Microsoft .NET.
+                           Il est dérivé du C++ et très proche du Java dont il reprend la syntaxe générale ainsi que les concepts, y ajoutant des notions telles que la surcharge des opérateurs, les indexeurs et les délégués. 
+                        </td>
+                        <td>  2000</td>
+                        <td>Microsoft</td>
+                     </tr>
+                     <tr>
+                        <td>5</td>
+                        <td>TI-BASIC</td>
+                        <td>
+                           <div class="prog5 ah"></div>
+                        </td>
+                        <td>TI-Basic est le nom du langage de programmation des calculatrices graphiques Texas Instruments. Par sa philosophie et ses capacités, ce langage se rapproche du BASIC, d'où son nom. Cependant, sa syntaxe est substantiellement différente de celle du BASIC. Le TI-Basic des calculatrices basées sur le Motorola 68000  n'est pas le même que celui des calculatrices basées sur le Z80 (TI-83,TI-84). Chaque modèle de calculatrice dispose de fonctionnalités particulières exploitables par les programmes, mais le cœur du langage est commun. </td>
+                        <td>1984</td>
+                        <td>Texas Instruments</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </section>
+      <div class="col-lg-12 space"></div>
+      <section id ="compétences2" class= "col-lg-12 sec2">
+         <div class="container">
+            <h1 class="p-3 mb-2 bg-dark text-white"> Compétences logiciels</h1>
+            <br>
+            <br>
+            <div style="overflow-x:auto;">
+               <table class="table  ">
+                  <caption>Mes compétences sur différents logiciels</caption>
+                  <thead class="thead-dark">
+                     <!-- En-tête du tableau -->
+                     <tr>
+                        <th>N°</th>
+                        <th>Logiciel</th>
+                        <th>Pourcentage d’apprentissage</th>
+                        <th>Description</th>
+                        <th>Premier lancement</th>
+                        <th>Auteur</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <!-- Corps du tableau -->
+                     <tr>
+                        <td>1</td>
+                        <td>The Gimp</td>
+                        <td>
+                           <div class="prog4 ah"></div>
+                        </td>
+                        <td>The GIMP est un outil d'édition et de retouche d'image, diffusé sous la licence GPLv3 comme un logiciel gratuit et libre. Il en existe des versions pour la plupart des systèmes d'exploitation dont GNU/Linux, macOS et Microsoft Windows.
+                           Le logiciel est intégré à la liste des logiciels libres préconisés par l’État français dans le cadre de la modernisation globale de ses systèmes d’informations .
+                           GIMP a des outils utilisés pour la retouche et l'édition d'image, le dessin à main levée, réajuster, rogner, photomontages, convertir entre différents formats d'image, et plus de tâches spécialisées.
+                        </td>
+                        <td>29 juillet 1995</td>
+                        <td>Peter Mattis et Spencer Kimball</td>
+                     </tr>
+                     <tr>
+                        <td>2</td>
+                        <td>Photoshop</td>
+                        <td>
+                           <div class="prog3 ah"></div>
+                        </td>
+                        <td>Photoshop est un logiciel de retouche, de traitement et de dessin assisté par ordinateur, lancé en 1990 sur MacOS puis en 1992 sur Windows.
+                           Édité par Adobe, il est principalement utilisé pour le traitement des photographies numériques, mais sert également à la création de desseins  
+                        </td>
+                        <td>19 février 1990</td>
+                        <td> Thomas Knoll</td>
+                     </tr>
+                     <tr>
+                        <td>3</td>
+                        <td>Unity</td>
+                        <td>
+                           <div class="prog2 ah"></div>
+                        </td>
+                        <td>Unity est un moteur de jeu multiplateforme (smartphone, ordinateur, consoles de jeux vidéo et Web) développé par Unity Technologies. Il est l'un des plus répandus dans l'industrie du jeu vidéo, aussi bien pour les grands studios que pour les indépendants du fait de sa rapidité aux prototypages et qu'il permet de sortir les jeux sur tous les supports.  </td>
+                        <td>  8 juin 2005</td>
+                        <td>Unity Technologies</td>
+                     </tr>
+                     <tr>
+                        <td>4</td>
+                        <td>Rpg Maker</td>
+                        <td>
+                           <div class="prog5 ah"></div>
+                        </td>
+                        <td>RPG Maker est une série de logiciels développée par deux compagnies japonaises, ASCII tout d'abord puis Enterbrain, qui permet de créer des jeux vidéo, principalement des jeux vidéo de rôle. Il est cependant possible de l'utiliser pour créer d'autres types de jeux en deux dimensions, comme des jeux de course.  </td>
+                        <td>17 décembre 1992</td>
+                        <td>ASCII et Enterbrain</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </section>
+      
+      
+      <!---------------------------------------------------- Le contenu de la page(fait principalement avec bootstrap) ---------------------------------------------------->
+      
+
+      <hr>
+      <section id="exp1" class="col-lg-12 sec1">
+         <div class="container">
+            <h1 class="text-white bg-dark"> Mes projets</h1>
+            <br>
+            <br>
+            <div class="row">
+               <article class="col-lg-4   ">
+                  <div class="moreInfo">
+                     <a href="#open1">
+                        <img src="images/Valise.png"   class="rounded float-left info" height="auto" width="100%" alt="">
+                        <div class = "eye">
+                           <div class="eyep"></div>
+                        </div>
+                     </a>
+                     <div id="open1" class="hidden">
+                        <div>
+                           <a href="#close" title="fermer" class="close">fermer</a>
+                           <h5>Projet valise sécurisée : Décembre 2018-Juin 2019</h5>
+                           <div class="lineseparator"></div>
+                           <img src="images/Valise.png"  alt="Projet de STI2D" width="100%">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h2>Description</h2>
+                                 <p>Projet spécifique à ma spécialité SIN( Système d'Information et Numérique) en STI2D.
+                                    <br>
+                                    En tant qu'STI2D SIN, nous devions mettre en place un système numérique répondant à
+                                    un cahier des charges bien précis, respécter le temps mis à disposition, et rediger chaque semaine un compte-rendu en groupe.
+                                 </p>
+                              </div>
+                              <div class="col-lg-6">
+                                 <h2>Objectif</h2>
+                                 <p>
+                                    <br>
+                                    Le but du projet était d'élaborer une valise sécurisée ayant plusieurs fonctions :
+                                    <br>- mesurer le poids de la valise grâce à la poignée (système de forces)
+                                    <br>- Verrouiller à distance la valise avec son téléphone
+                                    <br>- Verrouiller la valise avec un badge RFID
+                                    <br>- Stocker les données du propriétaire de la valise dans un code-barres, et les afficher sur un écran TFT pour retrouver le propriétaire de la valise en cas de vol.
+                                    <br>Ma partie, dans ce projet, était de stocker les données du propriétaire de la valise dans un code-barres, et les afficher sur un écran TFT.
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="embed-responsive embed-responsive-21by9 col-lg-4">
+                                 <iframe class="embed-responsive-item"  src="vidéos/IMG_3483.mp4" allowfullscreen></iframe>
+                              </div>
+                              <div class="embed-responsive embed-responsive-21by9 col-lg-4">
+                                 <iframe class="embed-responsive-item" src="vidéos/barcode_app.mp4" allowfullscreen></iframe>
+                              </div>
+                              <div class="embed-responsive embed-responsive-21by9 col-lg-4">
+                                 <iframe class="embed-responsive-item"  src="vidéos/IMG_3516.mp4" allowfullscreen></iframe>
+                              </div>
+                           </div>
+                           <h2>Compétences</h2>
+                           <div class="container">
+                              <div class="row">
+                                 <div class="col-lg-4 logo" > <img src="images/logo/java.png" height="100%" width="20%">Java</div>
+                                 <div class="col-lg-4 logo" > <img src="images/logo/php.png" height="100%" width="20%">PHP</div>
+                                 <div class="col-lg-4 logo" > <img src="images/logo/mysql.png" height="100%" width="20%">mysql</div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-lg-4 logo" > <img src="images/logo/Arduino.png" height="100%" width="20%">Arduino</div>
+                                 <div class="col-lg-4 logo" > <img src="images/logo/phpmyadmin.png" height="100%" width="20%">phpmyadmin</div>
+                                 <div class="col-lg-4 logo" > <img src="images/logo/Appinventor.png" height="100%" width="20%">App Inventor 2</div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-lg-4 logo" > <img src="images/logo/team-spirit.png" height="100%" width="20%">Esprit d'équipe</div>
+                              </div>
+                           </div>
+                           <h2>Note obtenue :</h2>
+                           <p>20/20</p>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+               <article class="col-lg-4 ">
+                  <div class="moreInfo">
+                     <a href="#open2">
+                        <img src="images/book.jpg"  class="img-thumbnail info" alt='Sources: apparence.photodeck.com'>
+                        <div class = "eye">
+                           <div class="eyep"></div>
+                        </div>
+                     </a>
+                     <div id="open2" class="hidden">
+                        <div>
+                           <a href="#close" title="fermer" class="close">fermer</a>
+                           <h5>Projet Concours National : Avril 2020 - Mai 2020</h5>
+                           <div class="lineseparator"></div>
+                           <img src="images/book.jpg" class="img-fluid" alt="Responsive image" width="100%">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h2>Description</h2>
+                                 <p>Projet réalisé à l'IUT de Paris Descartes.
+                                    <br>
+                                     Ce projet fut réalisé par une étudiante du dut Informatique Paris Descartes et moi, 
+                                     dans le cadre du module Interface Hommes Machines(IHM).
+                                     Nous devions créer un logiciel gérant des inscriptions à différentes épreuves(mathématiques, Anglais,Algorithmique...).
+                                     Ce projet fut pour nous une occasion de développer nos connaissances sur le langage Visual Basic, tout en renforçant notre esprit d'équipe.
+                                 </p>
+                              </div>
+                              <div class="col-lg-6">
+                                 <h2>Objectif</h2>
+                                 <p>
+                                    <br>
+                                    Le but du logiciel était de gérer des inscriptions avec plusieurs fonctionnalités sous forme de formulaires :
+                                     <br>- Enregistrer des inscriptions(en inscrivant le nom, prénom, matières choisis, région de passage)
+                                     <br>- Modifier ou supprimer une candidature,
+                                     <br>- Afficher l'état des inscriptions(le nombre d'inscrits),
+                                     <br>- Visualiser les bilans des inscriptions
+                                     <br>- Mettre fin aux inscriptions
+                                     <br>-Enregistrer les inscriptions à la fermeture de l'application                              
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="row">
+                             <img class="col-lg-4" alt=" Le formulaire d'accueil" title="Formulaire d'accueil permettant d'accéder aux autres fonctionnalités" src="images/Projets/Marrianne/formAccueil.PNG">
+                             <img class="col-lg-4" alt=" Le formulaire d'affichage d'état" title="Formulaire permettant d'afficher toutes les inscriptions" src="images/Projets/Marrianne/AffichageEtat.PNG">
+                             <img class="col-lg-4" alt=" Le formulaire de modification" title="Formulaire permettant de modifier une candidature" src="images/Projets/Marrianne/Bilan.PNG">
+
+                              
+                           </div>
+                           <h2>Compétences</h2>
+                           <div class="container">
+                              <div class="row">
+                                 <div class="col-lg-4 logo" > <img src="images/logo/visual-basic.png" height="100%" width="20%">Visual Basic.net</div>
+
+                                 <div class="col-lg-4 logo" > <img src="images/logo/team-spirit.png" height="100%" width="20%">Esprit d'équipe</div>
+                              </div>
+                           </div>
+                           <h2>Note obtenue :</h2>
+                           <p>19/20</p>
+                           
+                        </div>
+                     </div>
+                  </div>
+               </article>
+               <article class="col-lg-4 ">
+                  <div class="moreInfo">
+                     <a href="#open3">
+                        <img src="images/Menu Principal.PNG" class="rounded float-right info" height="auto" width="100%" alt='Sources: apparence.photodeck.com'>
+                        <div class = "eye">
+                           <div class="eyep"></div>
+                        </div>
+                     </a>
+                     <div id="open3" class="hidden">
+                        <div class>
+                           <a href="#close" title="fermer" class="close">fermer</a>
+                           <h5>Projet tutoré Embauche: Mars 2020 -Mai 2020</h5>
+                           <div class="lineseparator"></div>
+                           <img src="images/Menu Principal.PNG" class="img-fluid" alt="Responsive image" width="100%">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h2>Description</h2>
+                                 <p>
+                                    <br>
+                                    Dans le cadre du module Gestion de Projet Informatique,
+                                    nous avons vu et utilisé plusieurs logiciels et méthodologies être dans les conditions d'une société engagée pour
+                                    développer une solution : Easy Recruit. Ce projet avait pour but de nous apprendre la procédure, la création et le lancement 
+                                    d'un projet par la méthodologie agile.
+                                 </p>
+                              </div>
+                              <div class="col-lg-6">
+                                 <h2>Objectif</h2>
+                                 <p>
+                                    <br>
+                                    Nous avions donc plusieurs tâches à accomplir, avec une date limite pour respecter au mieux les conditions de développement :
+                                    - Semaine du 23 mars 2020 : élaborer un dictionnaire de données, et modéliser l'application en UML(diagrammes de cas d'utilisation, de classes..),
+                                    - Semaine du 30 mars 2020 : établir les fiches descriptives et les scénarios nominaux,
+                                    <br>- Semaine du 20 avril 2020 : créer et faire les maquettages des écrans associés de 5 fonctions de l'application,
+                                    <br>- Semaine du 27 avril 2020 : élaborer un dossier de proposition de solution,
+                                     <br>- Semaine du 04 mai 2020 : création de la base de données à partir du diagramme de classe,
+                                    <br>- Semaine du 11 mai 2020 : création des formulaires ACCESS.
+
+                                 </p>
+                              </div>
+                           </div>
+                          
+                            <h2>Compétences</h2>
+                            <div class="container">
+                               <div class="row">
+                                  <div class="col-lg-4 logo" > <img src="images/logo/Access.png" height="100%" width="20%">Access</div>
+                                  <div class="col-lg-4 logo" > <img src="images/logo/Excel.png" height="100%" width="20%">Excel</div>
+                                  <div class="col-lg-4 logo" > <img src="images/logo/Modelio.png" height="100%" width="20%">Modelio</div>
+
+                                  <div class="col-lg-4 logo" > <img src="images/logo/team-spirit.png" height="100%" width="20%">Esprit d'équipe</div>
+                               </div>
+                            </div>
+                            <h2>Note obtenue :</h2>
+                            <p>16/20</p>
+                            
+                         
+                           
+                        </div>
+                     </div>
+                  </div>
+               </article>
+            </div>
+         </div>         
+      </section>
+      <div class="col-lg-12 space"></div>
+
+
+      <!----------------------------------------------------  Partie Formation et Expériences ---------------------------------------------------->
+      <section id ="exp2" class= "col-lg-12 sec2" >
+         <hr>
+         <h1> Formation et Expériences</h1>
+         <h2 class="text-center font-weight-light">Formation</h2>
+         <div class="container ">
+            <div class="row">
+               <article class="col-lg-4 card ">
+                  <b class = "minima" >2017 - 2019</b>
+                  <div>
+                     <h3> <b> Baccalauréat STI2D</b> </h3>
+                     <b>Lycée Le Corbusier, Aubervilliers 93300</b>
+                     <br>
+                     <br>J'ai suivi un cursus technologique, au court duquel j'ai pu développer des compétences en systèmes d'information, j'y ai appris
+                     quelques langages,logiciels(Arduino,Proteus,FlowCode).
+                     <br>J'ai obtenu le baccalauréat mention Bien(15.61) 
+                     <br> 
+                  </div>
+               </article>
+               <div class="col-lg-4 text-center oui">
+                  <hr>
+                  <b class = "maxima" >2017 - 2019</b>
+               </div>
+            </div>
+            <br>
+            <div class="row">
+               <article class="col-lg-4"></article>
+               <div class="col-lg-4 text-center oui">
+                  <hr>
+                  <b class = "maxima" >2019 - 2020</b>
+               </div>
+               <article class="col-lg-4 card  ">
+                  <b class = "minima" >2019 - 2020</b>
+                  <div>
+                     <h3> <b> DUT Informatique 1ere année formation initiale</b> </h3>
+                     <b> de Paris - Site Mirabeau - Université de Paris</b>,
+                     <br>143 Avenue de Versailles, 75016 Paris
+                     <br>
+                     <br>Ma première  année en tant que Bac +1 fut à l'IUT de Paris, où j'ai pu acquérir et renforcer 
+                     mes compétences informatiques et culturelles(nous avions des cours d'expressions, de mathématiques, de comptabilité, de droit)  
+                     <br> 
+                  </div>
+               </article>
+            </div>
+            <br>
+            <div class="row">
+               <article class="col-lg-4 card  ">
+                  <b class = "minima" >2018 - 2020</b>
+                  <div>
+                     <h3> <b> DUT Informatique 2e année formation d'apprentissage</b> </h3>
+                     <b>IUT de Paris - Site Mirabeau - Université de Paris</b>
+                     <br>
+                     <br>143 Avenue de Versailles, 75016 Paris
+                     <br>Je suis actuellement en 2e année de DUT Informatique.  
+                     <br> 
+                  </div>
+               </article>
+               <div class="col-lg-4 text-center oui">
+                  <hr>
+                  <b class = "maxima" >2018 - 2020</b>
+               </div>
+            </div>
+            <br>
+            <h2 class="text-center font-weight-light">Expériences et projets professionnels</h2>
+            <div class="row">
+               <article class="col-lg-4 card ">
+                  <b class = "minima" >Mars  2016</b>
+                  <div>
+                     <h3> <b> Stage de découverte Orange France Télécom</b> </h3>
+                     <b>Paris 5e </b>,
+                     <br>
+                     J'ai eu l'occasion de faire mon stage de découverte en troisième au sein du service client d'Orange France Télécoms.
+                     <br>Lors de ce stage, j'ai pu analyser les différentes méthodes de ventes de forfait téléphoniques, analyser les moyens et logiciels *
+                     de télécommunications mis en place par les techniciens et informaticiens.
+                     <br> 
+                  </div>
+               </article>
+               <div class="col-lg-4 text-center oui">
+                  <hr>
+                  <b class = "maxima" >Mars  2016</b>
+               </div>
+            </div>
+            <div class="row">
+               <article class="col-lg-4"></article>
+               <div class="col-lg-4 text-center oui">
+                  <hr>
+                  <b class = "maxima" >2017 - 2019</b>
+               </div>
+               <article class="col-lg-4 card space ">
+                  <b class = "minima" >2017 - 2018</b>
+                  <div >
+                     <h3> <b> Projet DMEO : Le Barbier d'Aubervilliers</b> </h3>
+                     <b>Lycée le Corbusier - Opéra de Paris</b>
+                     <br> 
+                     <br> En partenariat avec l'Opéra de Paris, nous avons pu développer au cours de l'année 2017-2018
+                     un clip vidéo réinterprétant la pièce de théâtre de Beaumarchais : Le Barbier de Séville.
+                     <br> Pour développer ce projet, nous avions l'aide de nombreux professionnels de l'audiovisuel, comme 
+                     José Eon (réalisateur) ou Mariette Girard (cheffe de chœur).
+                     <br> 
+                  </div>
+               </article>
+               <br>
+               <article class="col-lg-4 card  ">
+                  <b class = "minima" >2018 - 2019</b>
+                  <div >
+                     <h3> <b> Projet DMEO : Exposition photo " L'Effort" </b> </h3>
+                     <b>Lycée le Corbusier - Opéra de Paris</b>
+                     <br> 
+                     Toujours en partenariat avec l'Opéra de Paris, nous avons pu élaborer une exposition photo sur le thème de l'effort
+                     (l'effort de l'artiste à l'opéra, l'effort de l'élève, l'effort et l'acharnement pour atteindre son but).
+                     <br> Pour ce faire, nous avions l'occasion de faire du Photomontage (avec le logiciel Gimp) ,prendre des choix artistiques, développer nos idées à partir d'un thème 
+                     avec l'aide de la photographe Anna Rouker.
+                     <br> 
+                  </div>
+               </article>
+               <div class="col-lg-4 text-center oui">
+                  <hr>
+                  <b class = "maxima" >2018 - 2019</b>
+               </div>
+               <article class="col-lg-4"></article>
+            </div>
+         </div>
+      </section>
+      <br>
+      <!----------------------------------------------------  Fin du  contenu de la page(fait principalement avec bootstrap) ---------------------------------------------------->
+      <!----------------------------------------------------  Le footer ---------------------------------------------------->
+      <footer>
+         <h6 class="text-center">Contactez-moi pour plus d'informations.</h6>
+         <hr style="background-color: rgb(191, 143, 0);">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3" ></div>
+                  <div class="col-lg-3 " title="e-Mail">
+                     <a href="mailto:sajous.davenese@gmail.com"><img class="logo" src="images/logo/mail.png" alt="" width="70px" height="70px"></a>
+                  </div>
+                  <div class="col-lg-3 " title="Linkedin">
+                     <a href="https://www.linkedin.com/in/davenese-sajous-a901751a7/"><img class="logo" src="images/logo/linkedin.png" alt="" width="70px" height="70px"></a>
+                  </div>
+                  <div class="col-lg-3 " title="Github">
+                     <a href="https://github.com/Caint-dev"><img class="logo" src="images/logo/gitHub.png" alt="" width="70px" height="70px"></a>
+                  </div>
+                  
+               </div>
+         </div>
+      </footer>
+      <!----------------------------------------------------  Fin du  footer ---------------------------------------------------->
+      <!----------------------------------------------------  Partie Script ---------------------------------------------------->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script>
+         // Plugin @RokoCB :: Return the visible amount of px
+         // of any element currently in viewport.
+         // stackoverflow.com/questions/24768795/
+         ;(function($, win) {
+         $.fn.inViewport = function(cb) {
+         return this.each(function(i,el){
+         function visPx(){
+          var H = $(this).height(),
+              r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+          return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+         } visPx();
+         $(win).on("resize scroll", visPx);
+         });
+         };
+         }(jQuery, window));
+         
+         
+         
+         $(".ah").inViewport(function(px){
+         if(px) $(this).addClass("triggeredCSS3") ;
+         });
+
+         
+      </script>
+   </body>
+</html>
+
