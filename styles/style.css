@@ -482,6 +482,7 @@ nav li:hover .snav {
 	max-width: 60px;
 }
 .logo:hover {
+	transition: opacity 100ms ease-in; 
 	opacity: 0.5;
 }
 .logo {
