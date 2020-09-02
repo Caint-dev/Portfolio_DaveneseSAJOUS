@@ -13,9 +13,11 @@
       <!-- end mobile specific info -->
    </head>
    <body onload="myFunction()">
-      <div id="loader"></div>
+      <div id="loader">
+         <p class="chargement en cours:"></p>
+      </div>
       <!---------------------------------------------------- Le menu de navigation ---------------------------------------------------->
-      <div id="myDiv">
+      <div id="Content">
       <nav class="Menu">
          <a href="#accueil" class="logo">Sajous Davenese</a>
          <input class="hum" type="checkbox" id="menu-btn" />
@@ -484,6 +486,7 @@
                      quelques langages,logiciels(Arduino,Proteus,FlowCode).
                      <br>J'ai obtenu le baccalauréat mention Bien(15.61) 
                      <br> 
+                     <br>
                   </div>
                </article>
                <div class="col-lg-4 text-center oui">
@@ -508,6 +511,7 @@
                      <br>Ma première  année en tant que Bac +1 fut à l'IUT de Paris, où j'ai pu acquérir et renforcer 
                      mes compétences informatiques et culturelles(nous avions des cours d'expressions, de mathématiques, de comptabilité, de droit)  
                      <br> 
+                     <br>
                   </div>
                </article>
             </div>
@@ -522,6 +526,7 @@
                      <br>143 Avenue de Versailles, 75016 Paris
                      <br>Je suis actuellement en 2e année de DUT Informatique.  
                      <br> 
+                     <br>
                   </div>
                </article>
                <div class="col-lg-4 text-center oui">
@@ -542,6 +547,7 @@
                      <br>Lors de ce stage, j'ai pu analyser les différentes méthodes de ventes de forfait téléphoniques, analyser les moyens et logiciels *
                      de télécommunications mis en place par les techniciens et informaticiens.
                      <br> 
+                     <br>
                   </div>
                </article>
                <div class="col-lg-4 text-center oui">
@@ -566,6 +572,7 @@
                      <br> Pour développer ce projet, nous avions l'aide de nombreux professionnels de l'audiovisuel, comme 
                      José Eon (réalisateur) ou Mariette Girard (cheffe de chœur).
                      <br> 
+                     <br>
                   </div>
                </article>
                <br>
@@ -579,6 +586,7 @@
                      (l'effort de l'artiste à l'opéra, l'effort de l'élève, l'effort et l'acharnement pour atteindre son but).
                      <br> Pour ce faire, nous avions l'occasion de faire du Photomontage (avec le logiciel Gimp) ,prendre des choix artistiques, développer nos idées à partir d'un thème 
                      avec l'aide de la photographe Anna Rouker.
+                     <br> 
                      <br> 
                   </div>
                </article>
@@ -647,7 +655,7 @@
 
          function showPage() {
          document.getElementById("loader").style.display = "none";
-         document.getElementById("myDiv").style.display = "block";
+         document.getElementById("Content").style.display = "block";
          }
       </script>
    </body>
