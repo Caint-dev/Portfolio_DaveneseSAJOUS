@@ -22,6 +22,9 @@ html {
 	animation: spin 2s linear infinite;
   }
   
+  #loader h1{
+	top: 100%;
+  }
   
   @keyframes spin {
 	0% { transform: rotate(0deg); }
@@ -412,7 +415,7 @@ nav li:hover .snav {
 /*--------------------------------------------Fin Partie animation--------------------------------------------*/
 
 
-/*--------------------------------------------Code spécifique a la oartie expérience loisirs(affichage d'un pop up lors du clic sur image)--------------------------------------------*/
+/*--------------------------------------------Code spécifique a la partie expérience loisirs(affichage d'un pop up lors du clic sur image)--------------------------------------------*/
 
 
 
@@ -480,10 +483,14 @@ nav li:hover .snav {
 	max-height: 60px;
 	max-width: 60px;
 }
-.logo:hover {
-	transition: opacity 100ms ease-in; 
+footer .logo{
 	opacity: 0.5;
-	color: rgb(191, 143, 0);
+
+}
+footer .logo:hover {
+	transition: opacity 100ms ease-in; 
+	opacity: 1;
+	
 }
 .logo {
 
