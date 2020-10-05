@@ -283,6 +283,7 @@ nav li:hover .snav {
 	.Menu .menu-icon {
 		display: none;
 	}
+	
 }
 
 
@@ -293,42 +294,67 @@ nav li:hover .snav {
 
 /*--------------------------------------------Partie animation--------------------------------------------*/
 
-
+.TextTransition.triggeredCSS3 {
+	animation: textOpacity 1s linear forwards;
+}
+.TitleMove.triggeredCSS3 {
+	animation: textMove 0.5s linear forwards;
+}
 .prog1.triggeredCSS3 {
 	background-color: red;
 	height: 25px;
 	display: block;
-	animation: prog1 2s linear forwards;
+	animation: prog1 1s linear forwards;
 }
 
 .prog2.triggeredCSS3 {
 	background-color: red;
 	height: 25px;
 	display: block;
-	animation: prog2 2s linear forwards;
+	animation: prog2 1s linear forwards;
 }
 
 .prog3.triggeredCSS3 {
 	background-color: red;
 	height: 25px;
 	display: block;
-	animation: prog3 2s linear forwards;
+	animation: prog3 1s linear forwards;
 }
 
 .prog4.triggeredCSS3 {
 	background-color: red;
 	height: 25px;
 	display: block;
-	animation: prog4 2s linear forwards;
+	animation: prog4 1s linear forwards;
 }
 
 .prog5.triggeredCSS3 {
 	background-color: red;
 	height: 25px;
 	display: block;
-	animation: prog5 2s linear forwards;
+	animation: prog5 1s linear forwards;
 }
 
+@keyframes textOpacity{
+	0% {
+		opacity: 0;
+		
+	}
+	100% {
+		opacity: 1;
+		
+	}
+}
+@keyframes textMove {
+	0% {
+		opacity: 0;
+		bottom: -300px;
+	}
+	100% {
+		opacity: 1;
+		bottom: 0px;
+	}
+}
 @keyframes prog1 {
 	0% {
 		width: 0%
@@ -523,7 +549,9 @@ footer .logo:hover {
 	.oui {
 		visibility: hidden;
   }
-  
+  footer .bip {
+	max-width: 130px;
+}
 }
 .moreInfo:hover .info{
 	
@@ -578,7 +606,7 @@ footer .logo:hover {
 	
   }
   
-
+ 
 
 
 /*-------------------------------------------- Fin du code spécifique a la page loisirs(affichage d'un pop up lors du clic sur image)--------------------------------------------*/
