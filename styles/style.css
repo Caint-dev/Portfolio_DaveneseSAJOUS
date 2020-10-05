@@ -295,9 +295,13 @@ nav li:hover .snav {
 /*--------------------------------------------Partie animation--------------------------------------------*/
 
 .TextTransition.triggeredCSS3 {
+	position: relative;
+	z-index: 1;
 	animation: textOpacity 1s linear forwards;
 }
 .TitleMove.triggeredCSS3 {
+	position: relative;
+	z-index: 1;
 	animation: textMove 0.5s linear forwards;
 }
 .prog1.triggeredCSS3 {
@@ -469,7 +473,7 @@ nav li:hover .snav {
 	pointer-events: none;
 	overflow: auto;
 	overflow-x: hidden;
-	z-index: 2;
+	z-index: 100000;
 }
 
 .hidden:target {
