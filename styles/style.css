@@ -305,35 +305,35 @@ nav li:hover .snav {
 	animation: textMove 0.5s linear forwards;
 }
 .prog1.triggeredCSS3 {
-	background-color: red;
+	background-color:  rgb(191, 143, 0);;
 	height: 25px;
 	display: block;
 	animation: prog1 1s linear forwards;
 }
 
 .prog2.triggeredCSS3 {
-	background-color: red;
+	background-color:  rgb(191, 143, 0);;
 	height: 25px;
 	display: block;
 	animation: prog2 1s linear forwards;
 }
 
 .prog3.triggeredCSS3 {
-	background-color: red;
+	background-color:  rgb(191, 143, 0);;
 	height: 25px;
 	display: block;
 	animation: prog3 1s linear forwards;
 }
 
 .prog4.triggeredCSS3 {
-	background-color: red;
+	background-color:  rgb(191, 143, 0);;
 	height: 25px;
 	display: block;
 	animation: prog4 1s linear forwards;
 }
 
 .prog5.triggeredCSS3 {
-	background-color: red;
+	background-color:  rgb(191, 143, 0);;
 	height: 25px;
 	display: block;
 	animation: prog5 1s linear forwards;
@@ -365,7 +365,7 @@ nav li:hover .snav {
 	}
 	100% {
 		width: 15%;
-		background-color: purple
+		
 	}
 }
 
@@ -375,7 +375,6 @@ nav li:hover .snav {
 	}
 	100% {
 		width: 30%;
-		background-color: orange
 	}
 }
 
@@ -385,7 +384,6 @@ nav li:hover .snav {
 	}
 	100% {
 		width: 50%;
-		background-color: blue
 	}
 }
 
@@ -395,7 +393,6 @@ nav li:hover .snav {
 	}
 	100% {
 		width: 75%;
-		background-color: yellow
 	}
 }
 
@@ -405,7 +402,6 @@ nav li:hover .snav {
 	}
 	100% {
 		width: 100%;
-		background-color: green
 	}
 }
 
